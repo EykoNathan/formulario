@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso Completo do Desenvolvedor Web</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <form method="POST" action="form.php">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o seu nome" required autofocus tabindex="1">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Seu@email.com.br" required readonly tabindex="2">
+            </div>
+            <div class="form-group">
+                <label for="nascimento">Nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento" class="form-control" min="2016-01-01" max="2016-01-15" required tabindex="3">
+            </div>
+            <div class="form-group">
+                <label>Sexo:</label>
+                <input type="radio" name="sexo" id="masculino" checked tabindex="4">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="feminino" tabindex="5">
+                <label for="feminino">Feminino</label>
+            </div>
+            <div class="form-group">
+                <label for="li">Li e Concordo</label>
+                <input type="checkbox" name="li" id="li" required checked tabindex="6">
+            </div>
+            <div class="form-group">
+                <label for="volume">Volume</label>
+                <input type="range" name="volume" id="volume" min="0" max="100" value="30" tabindex="7">
+            </div>
+            <div class="form-group">
+                <label for="meter">Bateria</label>
+                <meter name="meter" min="0" max="100" low="15" value="10" tabindex="8">10</meter>
+            </div>
+            <div class="form-group">
+                <label for="progress">Carregando</label>
+                <progress name="progress" min="0" max="100" value="60" tabindex="9">60%</progress>
+            </div>
+            <div class="form-group">
+                <label for="ano">Ano de Fabricação:</label>
+                <input type="number" name="ano" id="ano" class="form-control" min="1920" max="2021" step="2" value="2021" disabled tabindex="10">
+            </div>
+            <div class="form-group">
+                <label for="cor">Cor:</label>
+                <input type="color" name="cor" id="cor" class="form-control" tabindex="11">
+            </div>
+            <div class="form-group">
+                <label for="url">URL:</label>
+                <input type="url" name="url" id="url" class="form-control" tabindex="12">
+            </div>
+            <div class="form-group">
+                <label for="busca">Busca:</label>
+                <input type="search" name="busca" id="busca" class="form-control" tabindex="13">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" class="form-control" cols="30" rows="10" tabindex="14"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="estados">Estados:</label>
+                <select name="estados" id="estados" tabindex="15">
+                    <optgroup label="Sudeste">
+                        <option value="SP" selected>São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="ES">Espírito Santo</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="PR" selected>Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                </select>
+            </div>
+            <input type="hidden" name="id" value="1">
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" class="form-control" tabindex="16">
+            </div>
+            <div class="form-group">
+                <label for="mes">Mês:</label>
+                <input type="month" name="mes" id="mes" class="form-control" tabindex="17">
+            </div>
+            <div class="form-group">
+                <label for="semana">Semana:</label>
+                <input type="week" name="semana" id="semana" class="form-control" tabindex="18">
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora:</label>
+                <input type="time" name="hora" id="hora" class="form-control" tabindex="19">
+            </div>
+            <div class="form-group">
+                <label for="navegadores">Navegadores:</label>
+                <input type="text" list="navegadores" tabindex="20">
+                <datalist id="navegadores">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Safari">
+                    <option value="Edge">
+                </datalist>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </form>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
